@@ -1,0 +1,63 @@
+{
+    "settings" : {
+        "notifications": {
+            "email": [
+                {
+                    "smtp": "smtp.gmail.com",
+                    "port": 587,
+                    "username": "francescovanboteng@gmail.com",
+                    "password": "...",
+                    "from": "francescovanboteng@gmail.com",
+                    "to": [
+                        "francescovanboteng@gmail.com"
+                    ]
+                }
+            ],
+            "telegram": [
+                {
+                    "botToken": "901859432:AAGA41D6K6JZXC9D-z6snEfW5jnzWD0f7ZM",
+                    "chatId": "-1001380226839.0"
+                }
+            ],
+            "pushover": [
+                {
+                    "userKey": "user_key",
+                    "appToken": "app_token"
+                }
+            ],
+            "webhook": [
+                {
+                    "url": "url",
+                    "method": "GET"
+                }
+            ],
+            "line": [
+                {
+                    "channelSecret": "channel_secret",
+                    "channelAccessToken": "channel_access_Token"
+                }
+            ],
+            "sms": [
+                {
+                    "sms": "todo"
+                }
+            ]
+        },
+        "monitor" : {
+            "checkInterval" : 10,
+            "timeout" : 5,
+            "maxConnection": 50,
+            "exponentialBackoffSeconds" : 5
+        },
+        "servers": [
+            {
+                "name":"Aksi 2019",
+                "ipAddress":"118.98.227.194",
+                "port": 22,
+                "protocol": "sftp",
+                "checkInterval": 5,
+                "timeout": 5
+            }
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+version: "1"
+
+services:
+  gossm:
+    build: ./
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./configs:/configs
+      - ./logs:/var/log/monitorsuptime
