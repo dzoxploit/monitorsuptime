@@ -31,12 +31,12 @@ func (s * LineNotifier) Notify(text string) error {
 	
 }
 
-func (e *TelegramNotifier) Initialize() {
+func (e *LineNotifier) Initialize() {
 }
 
 func (ts *LineSettings) Validate() error {
 	errLineProperty := func(property string) error {
-		return fmt.Errorf("missing telegram property %s", property)
+		return fmt.Errorf("missing line property %s", property)
 	}
 	switch {
 	case ts.UserID == "":
